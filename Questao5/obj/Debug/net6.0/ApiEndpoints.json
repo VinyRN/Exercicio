@@ -1,0 +1,157 @@
+[
+  {
+    "ContainingType": "Questao5.Infrastructure.Services.Controllers.AtendimentoController",
+    "Method": "GetAllAtendimentos",
+    "RelativePath": "api/atendimento",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Questao5.Domain.Entities.Atendimento, Questao5, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Questao5.Infrastructure.Services.Controllers.AtendimentoController",
+    "Method": "FiltrarAtendimentosComMaisDeTresOcorrencias",
+    "RelativePath": "api/atendimento/filtrarPorOcorrencias",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Questao5.Infrastructure.Services.Controllers.CalculadoraGolsController",
+    "Method": "CalcularGols",
+    "RelativePath": "api/calculadoraGols/calcular",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "team",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "year",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Questao5.Infrastructure.Services.Controllers.ContaBancariaController",
+    "Method": "ObterTodasContas",
+    "RelativePath": "api/ContaBancaria",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Questao5.Infrastructure.Services.Controllers.ContaBancariaController",
+    "Method": "ObterConta",
+    "RelativePath": "api/ContaBancaria/{numeroConta}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numeroConta",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Questao5.Infrastructure.Services.Controllers.ContaBancariaController",
+    "Method": "Depositar",
+    "RelativePath": "api/ContaBancaria/{numeroConta}/depositar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numeroConta",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "valor",
+        "Type": "System.Double",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Questao5.Infrastructure.Services.Controllers.ContaBancariaController",
+    "Method": "Sacar",
+    "RelativePath": "api/ContaBancaria/{numeroConta}/sacar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numeroConta",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "valor",
+        "Type": "System.Double",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Questao5.Infrastructure.Services.Controllers.ContaBancariaController",
+    "Method": "CriarConta",
+    "RelativePath": "api/ContaBancaria/criar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numeroConta",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "nomeTitular",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "depositoInicial",
+        "Type": "System.Nullable\u00601[[System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
